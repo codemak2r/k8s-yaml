@@ -60,7 +60,7 @@ spec:
           claimName: jenkins-pvc 
 ---
 apiVersion: v1
-kind: service
+kind: Service
 metadata:
   name: jenkins 
   namespace: devops
