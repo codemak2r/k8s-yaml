@@ -1,0 +1,16 @@
+apiversion: v1
+kind: PersistenVolume
+metadata:
+  name: jenkins-pv
+  labels: 
+    env: devops
+spec:
+  storageClassName: jenkins-storage
+  accessMode:
+  - ReadWriteMany
+  capacity:
+    storage: 5Gi
+  persistenVolumeReclaimPolicy: Delete
+  nfs:
+    path: /data/jenkins
+    server: 192.168.50.200
