@@ -35,7 +35,7 @@ spec:
           requests:
             cpu: 500m
             member: 512Mi
-        livedProbe:
+        livenessProbe:
           httpGet:
             path: /login
             port: 8080
