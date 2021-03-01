@@ -53,7 +53,7 @@ spec:
       fsGroup: 1000
     volumes:
     - name: jenkinshome
-      persistemVolumeClaim: 
+      persistentVolumeClaim: 
         claimName: jenkins-pvc 
 ---
 apiVersion: v1
