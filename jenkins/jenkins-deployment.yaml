@@ -34,7 +34,7 @@ spec:
             memory: 1Gi
           requests:
             cpu: 500m
-            member: 512Mi
+            memory: 512Mi
         livenessProbe:
           httpGet:
             path: /login
