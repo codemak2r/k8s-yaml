@@ -52,8 +52,8 @@ spec:
         volumeMounts:
         - name: jenkinshome
           mountPath: /var/jenkins_home
-    securityContext:
-      fsGroup: 1000
+      securityContext:
+        fsGroup: 1000
     volumes:
     - name: jenkinshome
       persistentVolumeClaim: 
