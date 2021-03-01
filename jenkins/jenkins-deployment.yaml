@@ -54,10 +54,10 @@ spec:
           mountPath: /var/jenkins_home
       securityContext:
         fsGroup: 1000
-    volumes:
-    - name: jenkinshome
-      persistentVolumeClaim: 
-        claimName: jenkins-pvc 
+      volumes:
+      - name: jenkinshome
+        persistentVolumeClaim: 
+          claimName: jenkins-pvc 
 ---
 apiVersion: v1
 kind: service
