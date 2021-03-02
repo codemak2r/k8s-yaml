@@ -16,7 +16,7 @@ spec:
       serviceAccount: jenuser
       containers:
       - name: jenkins
-        image: jenkins
+        image: jenkins/jenkins:lts
         imagePullPolicy: IfNotPresent
         env:
         - name: JAVA_OPTS
